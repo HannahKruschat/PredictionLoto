@@ -3,4 +3,8 @@
 # - sinon ne fait rien
 # Renvoie ensuite la liste modifiée
 def r(liste):
-    # TODO
+    for i in range (len(liste)):
+        if len(liste[i]) == 1:
+            (liste[i]) = "0"+ (liste[i])
+    return liste
+    
